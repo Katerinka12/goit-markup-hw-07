@@ -34,11 +34,11 @@
   transform: translate(-50%, -50%) scale(0.4);
   opacity: 0;
 }
-
 .backdrop .modal-wrapper {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
+
 .modal-text {
   display: block;
   @include fontstyle(700, 20px, 1.15);
