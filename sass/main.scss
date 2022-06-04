@@ -1,6 +1,6 @@
-@import './utils/variables';
-@import './utils/all';
-@import './components/header';
+@import 'utils/variables';
+@import 'utils/base';
+@import 'components/header';
 
 body{
     color:tomato;

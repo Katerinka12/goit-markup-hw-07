@@ -1,6 +1,60 @@
+/* Переменные*/
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #2196f3;
+    --white-text-color: #ffffff;
+    --primary-bgc: #ffffff;
+    --secondary-bgc: #f5f4fa;
+}
+
+/*Body*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-bgc);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*Header*/
+
 .header {
     height: 80px;
-    background-color: $primaryBgc;
+    background-color: var(--primary-bgc);
     border-bottom: 1px solid #ececec;
 }
 
@@ -19,57 +73,54 @@
 
 .header__logo {
     display: inline-block;
-    font-family: $secondaryFontFamily;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
     margin-right: 93px;
 
-    color:$secondaryTextColor;
+    color: var(--secondary-text-color);
 }
 
 .header__weblogo {
-    color:$titleColor;
+    color: #212121;
 }
 
 .header__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: $primaryFontFamily;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    color: $titleColor;
+    color: #212121;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &hover,
-    &focus {
-            color: $secondaryTextColor;
-        }
 }
 
 .header__item {
     margin-right: 50px;
-    &:last-child {
-            margin-right: 0;
-        }
 }
 
 .header__link--primary {
 
-    color: $primaryTextColor;
+    color: var(--primary-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:first-child {
-            margin-left: 0;
-        }
-        
+}
+
+.header__link--primary:first-child {
+    margin-left: 0;
+}
+
+.header__item:last-child {
+    margin-right: 0;
 }
 
 .header__list {
@@ -83,13 +134,17 @@
     justify-content: center;
     margin-right: 50px;
     align-items: center;
-    &:last-child {
-            margin-right: 0;
-        }
+}
+
+.header__contact-item:last-child {
+    margin-right: 0;
 }
 
 .header__link--current {
-    color: $secondaryTextColor;
+    color: var(--secondary-text-color);
+}
+
+.header__link--current {
     position: relative;
 }
 
@@ -102,9 +157,15 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: $secondaryBgc;
+    background-color: var(--secondary-text-color);
 }
 
+
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--secondary-text-color);
+}
 
 .contact__link:hover,
 .contact__link:focus,
@@ -122,9 +183,23 @@
 .header__link:hover .header__icon,
 .header__link:focus .header__icon {
 
-    color: $secondaryTextColor;
+    color: #2196f3;
 }
 
+.header__list,
+.advantages-list,
+.works-list,
+.team-list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.advantages-list,
+.works-list,
+.team-list {
+    list-style: none;
+    text-decoration: none;
+}
 
 .backdrop {
     position: fixed;
@@ -149,7 +224,7 @@
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
-    background: $whiteTextColor;
+    background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -169,7 +244,7 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
-    color: $titleColor;
+    color: #212121;
 }
 
 .modal-btn-icon {
@@ -178,7 +253,7 @@
 
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
-    fill: $secondaryTextColor;
+    fill: #2196f3;
 }
 
 .form-field {
@@ -212,12 +287,12 @@
 .form-text:hover,
 .form-item:focus,
 .form-text:focus {
-    border: 1px solid $secondaryTextColor;
+    border: 1px solid #2196f3;
 }
 
 .form-item:hover~.form-icon,
 .form-item:focus~.form-icon {
-    fill: $secondaryTextColor;
+    fill: #2196f3;
 }
 
 .form-text {
@@ -240,7 +315,7 @@
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 
-    color: $primaryTextColor;
+    color: #757575;
 }
 
 .text.policy-desc {
@@ -283,7 +358,7 @@
     justify-content: center;
     margin-right: 7px;
     border-radius: 2px;
-    outline: 2px solid $titleColor;
+    outline: 2px solid #212121;
     outline-offset: -2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -298,12 +373,12 @@
 }
 
 .checkbox:checked+.custom-checkbox {
-    background-color: $secondaryTextColor;
-    outline: 2px solid $secondaryTextColor;
+    background-color: #2196f3;
+    outline: 2px solid #2196f3;
 }
 
 .modal-link {
-    color: $secondaryTextColor;
+    color: #2196f3;
 }
 
 .form-btn {
@@ -315,14 +390,14 @@
     margin-right: auto;
     margin-bottom: 40px;
 
-    font-family: $primaryFontFamily;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
 
-    color: $whiteTextColor;
-    background: $secondaryTextColor;
+    color: #ffffff;
+    background: #2196f3;
 
     border-radius: 4px;
     border-color: transparent;
@@ -347,7 +422,7 @@
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: $whiteTextColor;
+    background-color: #ffffff;
 }
 
 /*Hero*/
@@ -376,7 +451,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: $whiteTextColor;
+    color: var(--white-text-color);
 }
 
 .hero .btn {
@@ -395,15 +470,15 @@
     text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    color: $whiteTextColor;
-    background: $secondaryTextColor;
+    color: var(--white-text-color);
+    background: var(--secondary-text-color);
     border-color: transparent;
 }
 
 /*Section advantages*/
 
 .advantages {
-    background-color: $primaryBgc;
+    background-color: var(--primary-bgc);
 }
 
 .advantages-list::first-letter {
@@ -421,6 +496,8 @@
     margin-right: 30px;
     width: 270px;
     height: 75px;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -437,18 +514,19 @@ h3 {
 }
 
 .advantages .title-advantage {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: $titleColor;
+    color: #212121;
 }
 
 .advantages-icon {
     width: 270px;
     height: 120px;
-    background-color: $secondaryBgc;
+    background-color: var(--secondary-bgc);
     border-radius: 4px;
     margin-bottom: 30px;
     display: flex;
@@ -475,7 +553,7 @@ h3 {
     line-height: 1.17;
     text-align: center;
 
-    color: $titleColor;
+    color: #212121;
 }
 
 .work-img {
@@ -499,7 +577,7 @@ h3 {
     padding: 27px 82px;
     background: rgba(47, 48, 58, 0.8);
 
-    color: $whiteTextColor;
+    color: #ffffff;
 }
 
 /*Section Team*/
@@ -512,20 +590,20 @@ h3 {
     font-size: 16px;
     line-height: 1.19;
 
-    color: $titleColor;
+    color: #212121;
 }
 
 .team-text {
     text-align: center;
     padding-bottom: 30px;
-    background-color: $primaryBgc;
+    background-color: var(--primary-bgc);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team {
-    background-color: $secondaryBgc;
+    background-color: var(--secondary-bgc);
 }
 
 .team-list {
@@ -567,12 +645,12 @@ h3 {
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-    fill: $whiteTextColor;
+    fill: var(--white-text-color);
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: $secondaryTextColor;
+    background-color: #2196f3;
 }
 
 .social-link:last-child {
@@ -585,7 +663,7 @@ h3 {
     line-height: 1.19;
     margin-bottom: 16px;
 
-    color: $primaryTextColor;
+    color: var(--primary-text-color);
 }
 
 /* Clients */
@@ -597,7 +675,7 @@ h3 {
     line-height: 1.17;
     text-align: center;
 
-    color: $titleColor;
+    color: #212121;
 }
 
 .clients__list {
@@ -632,8 +710,8 @@ h3 {
 .clients__link.link:focus .clients__icon,
 .clients__link:hover,
 .clients__link:focus {
-    border-color: $secondaryTextColor;
-    fill: $secondaryTextColor;
+    border-color: #2196f3;
+    fill: #2196f3;
 }
 
 /*Footer*/
@@ -650,23 +728,23 @@ h3 {
     max-height: 83px;
     line-height: 1.71;
     font-style: normal;
-    color: $whiteTextColor;
+    color: var(--white-text-color);
 }
 
 .footer__logo {
     display: inline-block;
-    font-family: $secondaryFontFamily;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
     margin-right: 156px;
     margin-bottom: 20px;
-    color: $secondaryTextColor;
+    color: var(--secondary-text-color);
 }
 
 .footer__weblogo {
-    color: $whiteTextColor;
+    color: var(--white-text-color);
 }
 
 .adress__link {
@@ -700,7 +778,7 @@ h3 {
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: $whiteTextColor;
+    color: var(--white-text-color);
     margin-bottom: 20px;
 }
 
@@ -724,13 +802,13 @@ h3 {
 }
 
 .invite__icon {
-    fill: $whiteTextColor;
+    fill: #ffffff;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .invite__link:hover,
 .invite__link:focus {
-    background-color: $secondaryTextColor;
+    background-color: #2196f3;
 }
 
 .invite {
@@ -745,7 +823,7 @@ h3 {
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: $whiteTextColor;
+    color: var(--white-text-color);
 
 }
 
@@ -766,7 +844,7 @@ h3 {
     border-radius: 4px;
     background-color: #2f303a;
     padding-left: 16px;
-    color: $whiteTextColor;
+    color: #ffffff;
 }
 
 
@@ -789,8 +867,8 @@ h3 {
     bottom: 0;
     right: 0;
 
-    color: $whiteTextColor;
-    background-color: $secondaryTextColor;
+    color: #ffffff;
+    background-color: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
@@ -814,7 +892,7 @@ h3 {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: $whiteTextColor;
+    color: var(--white-text-color);
     background-color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -831,8 +909,8 @@ h3 {
     border-radius: 4px;
     border-color: transparent;
 
-    color: $titleColor;
-    background-color: $secondaryBgc;
+    color: #212121;
+    background-color: var(--secondary-bgc);
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
@@ -845,8 +923,8 @@ h3 {
 
 .button:hover,
 .button:focus {
-    color: $whiteTextColor;
-    background-color: $secondaryTextColor;
+    color: var(--white-text-color);
+    background-color: #2196f3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -899,7 +977,7 @@ h3 {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    color: $titleColor;
+    color: #212121;
 }
 
 .exsamles-model-type {
@@ -910,7 +988,7 @@ h3 {
     font-size: 16px;
     line-height: 1.88;
 
-    color:$primaryTextColor;
+    color: var(--primary-text-color);
 }
 
 .exsamples-model-link:hover {
@@ -943,7 +1021,7 @@ h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
-    color: $whiteTextColor;
+    color: #ffffff;
     opacity: 0;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
@@ -956,3 +1034,13 @@ h3 {
     transform: translateY(0);
 }
 
+.write-mail {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    margin-bottom: 20px;
+}
