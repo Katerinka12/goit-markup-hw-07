@@ -1,7 +1,13 @@
-@import 'utils/variables';
-@import 'utils/base';
-@import 'components/header';
-
-body{
-    color:tomato;
-}
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+@import './layouts/header';
+@import './layouts/modal';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio'
