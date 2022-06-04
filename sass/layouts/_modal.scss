@@ -35,9 +35,8 @@ backdrop {
 
 .modal-text {
     display: block;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include fontstyle(700, 20px, 1.15);
+    
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
@@ -108,8 +107,7 @@ backdrop {
 
 .text {
     display: block;
-    font-size: 12px;
-    line-height: 1.17;
+    @include fontstyle(400, 12px, 1.17);
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 
@@ -118,8 +116,7 @@ backdrop {
 
 .text.policy-desc {
     display: block;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fontstyle(400, 14px, 1.71);
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -139,8 +136,7 @@ backdrop {
 }
 
 .form-text::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
+    @include fontstyle(400, 12px, 1.17);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
@@ -192,17 +188,12 @@ backdrop {
     margin-right: auto;
     margin-bottom: 40px;
 
-    font-family: $primaryFontFamily;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include fontstyle(700, 16px, 1.88);
     letter-spacing: 0.06em;
 
     color: $whiteTextColor;
     background: $secondaryTextColor;
-
-    border-radius: 4px;
-    border-color: transparent;
+@extend .buton;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
         &:focus {

@@ -1,8 +1,6 @@
 .team-title {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include fontstyle(700, 36px, 1.17);
     text-align: center;
 
     color: $titleColor;
@@ -10,9 +8,7 @@
 .name-title {
     margin-bottom: 10px;
     padding-top: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include fontstyle(500, 16px, 1.19);
 
     color: $titleColor;
 }
@@ -77,10 +73,7 @@
 
 
 .post-team {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.19;
-    margin-bottom: 16px;
+    @include fontstyle(400, 16px, 1.19);
 
     color: $primaryTextColor;
 }

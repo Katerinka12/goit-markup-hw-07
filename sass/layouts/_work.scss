@@ -10,9 +10,7 @@
 
 .works-title {
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include fontstyle(700, 36px, 1.17);
     text-align: center;
 
     color: $titleColor;
@@ -30,9 +28,7 @@
     display: block;
     width: 100%;
     height: 70px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fontstyle(700, 14px, 1.14);
     text-align: center;
     text-transform: uppercase;
     padding: 27px 82px;

@@ -20,9 +20,7 @@
 .header__logo {
     display: inline-block;
     font-family: $secondaryFontFamily;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include fontstyle(700, 26px, 1.19);
     text-decoration: none;
     margin-right: 93px;
 
@@ -37,10 +35,7 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-family: $primaryFontFamily;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fontstyle(500, 14px, 1.14);
     letter-spacing: 0.02em;
     text-decoration: none;
 

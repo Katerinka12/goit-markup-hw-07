@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/mixin';
+@import './components/btn';
 @import './base/reset';
 @import './base/common';
 @import './base/container';
@@ -10,4 +12,4 @@
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/footer';
-@import './layouts/portfolio'
+@import './layouts/portfolio';

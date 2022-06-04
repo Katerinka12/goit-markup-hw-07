@@ -1,3 +1,8 @@
+.buton, .form-btn, .hero .btn, .email-form__btn, .button {
+  border-radius: 4px;
+  border-color: transparent;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -91,7 +96,6 @@ h3 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -304,6 +308,7 @@ backdrop {
 
 .text {
   display: block;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -313,6 +318,7 @@ backdrop {
 
 .text.policy-desc {
   display: block;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -335,6 +341,7 @@ backdrop {
 }
 
 .form-text::-webkit-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -342,6 +349,7 @@ backdrop {
 }
 
 .form-text:-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -349,6 +357,7 @@ backdrop {
 }
 
 .form-text::-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -356,6 +365,7 @@ backdrop {
 }
 
 .form-text::placeholder {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -419,15 +429,12 @@ backdrop {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
-  border-radius: 4px;
-  border-color: transparent;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -478,7 +485,6 @@ backdrop {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -494,7 +500,6 @@ backdrop {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -508,10 +513,8 @@ backdrop {
       justify-content: space-around;
   text-align: center;
   letter-spacing: 0.06em;
-  border-radius: 4px;
   color: #ffffff;
   background: #2196f3;
-  border-color: transparent;
 }
 
 .advantages {
@@ -541,7 +544,6 @@ backdrop {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .advantages-item .advantages-item .advantages-text:last-child {
@@ -549,8 +551,8 @@ backdrop {
 }
 
 .advantages .title-advantage {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
@@ -713,16 +715,14 @@ backdrop {
 }
 
 .post-team {
-  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 16px;
   color: #757575;
 }
 
 .clients__title {
   margin-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -851,8 +851,8 @@ backdrop {
 }
 
 .invite__title {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
@@ -902,8 +902,8 @@ backdrop {
 .email-form__title {
   margin-bottom: 20px;
   position: relative;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
@@ -980,7 +980,6 @@ backdrop {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -992,9 +991,6 @@ backdrop {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
-  border-color: transparent;
   color: #212121;
   background-color: #f5f4fa;
   padding-top: 6px;
@@ -1078,6 +1074,7 @@ backdrop {
   margin-bottom: 20px;
   margin-right: 24px;
   margin-left: 24px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;

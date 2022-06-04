@@ -16,9 +16,7 @@
 .footer__logo {
     display: inline-block;
     font-family: $secondaryFontFamily;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include fontstyle(700, 26px, 1.19);
     text-decoration: none;
     margin-right: 156px;
     margin-bottom: 20px;
@@ -58,9 +56,7 @@
 }
 
 .invite__title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
+    @include fontstyle(700, 14px, 1.14);
     text-transform: uppercase;
 
     color: $whiteTextColor;
@@ -101,9 +97,8 @@
 .email-form__title {
     margin-bottom: 20px;
     position: relative;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
+    @include fontstyle(700, 14px, 1.14);
+
     text-transform: uppercase;
 
     color: $whiteTextColor;
@@ -136,9 +131,7 @@
 }
 
 .email-form__btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include fontstyle(700, 16px, 1.88);
     display: flex;
     align-items: center;
     text-align: center;
@@ -148,7 +141,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-
+    @extend .buton;
     color: $whiteTextColor;
     background-color: $secondaryTextColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
